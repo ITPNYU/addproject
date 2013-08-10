@@ -1,0 +1,171 @@
+<!doctype html>
+<html>
+<head>
+  <title>Add Project</title>
+  <link rel="stylesheet" href="stylesheets/chosen.min.css">
+  <link rel="stylesheet" href="stylesheets/addproject.css">
+  <script type="text/javascript" src="javascripts/jquery.js"></script>
+  <script type="text/javascript" src="javascripts/chosen.jquery.min.js"></script>
+  <script type="text/javascript" src="javascripts/addproject.js"></script>
+</head>
+<body>
+  <form id="addproject">
+    <div id="form-status"></div>
+    <div class="input-item required" id="project-title">
+      <label for="project-title-input">Project Title</label>
+      <input type="text" id="project-title-input">
+      <div class="status"></div>
+      <div class="description"></div>
+    </div>
+
+    <div class="input-item required" id="point-person">
+      <label for="point-person-input">Point Person</label>
+      <div class="status"></div>
+      <div class="description">Specify one person as the Point Person for this project.</div>
+      <select class="chosen-select" id="point-person-input">
+        <option value="Joe Doe">Joe Doe</option>
+        <option value="Jough Doe">Jough Doe</option>
+        <option value="Jowe Doe">Jowe Doe</option>
+      </select>
+    </div>
+
+    <div class="input-item required" id="participating-persons">
+      <label for="participating-persons-input">Participating Persons</label>
+      <div class="status"></div>
+      <div class="description">Everyone, including point person, working on the project.</div>
+      <select multiple class="chosen-select" id="participating-persons-input">
+        <option value="Joe Doe">Joe Doe</option>
+        <option value="Jough Doe">Jough Doe</option>
+        <option value="Jowe Doe">Jowe Doe</option>
+      </select>
+    </div>
+
+    <div class="input-item required" id="project-url">
+      <label for="project-url-input">Project URL</label>
+      <input type="url" id="project-url-input">
+      <div class="status"></div>
+      <div class="description"></div>
+    </div>
+
+    <div class="input-item required" id="elevator-pitch">
+      <label for="elevator-pitch-input">Elevator Pitch</label>
+      <div class="status"></div>
+      <div class="description">Sum up your project in one powerful, concise statement.</div>
+      <textarea id="elevator-pitch-input"></textarea>
+    </div>
+
+    <div class="input-item required" id="project-abstract">
+      <label for="project-abstract-input">Project Description</label>
+      <div class="status"></div>
+      <div class="description">Give us an overview of your project (about 250-300 words)</div>
+      <textarea id="project-abstract-input"></textarea>
+    </div>
+
+    <div class="input-item required" id="project-keywords">
+      <label for="project-keywords-input">Keywords</label>
+      <input type="url" id="project-keywords-input">
+      <div class="status"></div>
+      <div class="description">Comma separated ex: toys, physical computing, RFID</div>
+    </div>
+
+    <div class="input-item required" id="project-venue">
+      <label for="project-venue-input">Venue(s)</label>
+      <select id="project-venue-input" class="chosen-select" multiple>
+        <option value="show">Thesis 2013</option>
+        <option value="show">Winter Show 2013</option>
+        <option value="show">Winter Show 2012</option>
+      </select>
+    </div>
+
+    <div class="input-item required" id="project-classes">
+      <label for="project-classes-input">Classes</label>
+      <select id="project-classes-input" class="chosen-select" multiple>
+        <option value="class">Class 1</option>
+        <option value="class">Class 2</option>
+        <option value="class">Class 3</option>
+      </select>
+    </div>
+
+    <div class="input-item required" id="project-equipment">
+      <label for="project-equipment-input">Required Equipment</label>
+      <select id="project-equipment-input" class="chosen-select" multiple>
+        <option>AudioIn Stereo Mic</option>
+        <option>AudioIn Wireless Omni Mic</option>
+        <option>AudioIn Wireless Lavalier Mic</option>
+        <option>AudioIn Lavalier Mic </option>
+        <option>AudioIn Omni Mic </option>
+        <option>AudioIn Shotgun Mic</option>
+        <option>AudioOut  Multimedia Speakers</option>
+        <option>AudioOut  Headphones </option>
+        <option>AudioOut  Mixers </option>
+        <option>AudioOut  Amp and Speakers </option>
+        <option>Computer  Mac</option>
+        <option>Computer   </option>
+        <option>Computer  PC </option>
+        <option>Computer  No Preference</option>
+        <option>Computer  Using My Own </option>
+        <option>Lighting  Midi Dimmer</option>
+        <option>Lighting  Soft Box Kit </option>
+        <option>Lighting  Pro Light Kit</option>
+        <option>Lighting  Arri Light Kit </option>
+        <option>Lighting  Clip Light </option>
+        <option>Lighting  Mixed Kit</option>
+        <option>Network NYU LAN Wired Ethernet </option>
+        <option>Network NYU-ROAM Wireless Ethernet </option>
+        <option>Network Hub/switch </option>
+        <option>Network BlueTooth</option>
+        <option>Network itpsandbox Wireless Ethernet </option>
+        <option>Network Closed Network (no access to internet) </option>
+        <option>Peripherals Midiman Quatro </option>
+        <option>Peripherals Other</option>
+        <option>Peripherals USB Midisport</option>
+        <option>Peripherals Midi Keyboard Controller </option>
+        <option>Peripherals USB Serial Adapter </option>
+        <option>Peripherals Zip Drive</option>
+        <option>Peripherals Dual Head Video Card </option>
+        <option>Peripherals Edirol USB Audio Interface </option>
+        <option>Software  Other</option>
+        <option>Software  Max/MSP/Jitter </option>
+        <option>Software  3D </option>
+        <option>Software  Processing </option>
+        <option>Software  Flash</option>
+        <option>Software  Director </option>
+        <option>Space Will Make Noise</option>
+        <option>Space Rear Projection</option>
+        <option>Space Front Projection </option>
+        <option>Space Prefer Dark Space</option>
+        <option>Space Prefer Quiet Space </option>
+        <option>Space 3' wall hanging space</option>
+        <option>Space 6' wall hanging space</option>
+        <option>Space 5' x 5' floor space</option>
+        <option>Space 9' x 9' floorspace </option>
+        <option>Space Pedestal Setup ( kiosk / tabletop )</option>
+        <option>Space Monitor-Keyboard-Mouse Setup </option>
+        <option>Space Small Projection </option>
+        <option>VideoIn Firewire Web Cam </option>
+        <option>VideoIn Mini DV Cam</option>
+        <option>VideoIn Black and White Tube Cam </option>
+        <option>VideoIn Color Tube Cam </option>
+        <option>VideoIn VCR</option>
+        <option>VideoIn DVD Player </option>
+        <option>VideoIn Mini DV Deck </option>
+        <option>VideoIn USB Web Cam</option>
+        <option>VideoOut  Projector</option>
+        <option>VideoOut  Plasma Display </option>
+        <option>VideoOut  17" Multimedia LCD </option>
+        <option>VideoOut  17" LCD</option>
+        <option>VideoOut  CRT Monitor</option>
+
+      </select>
+    </div>
+
+
+    <div class="input-item optional" id="notes">
+      <label for="notes-input">Notes (optional)</label>
+      <textarea id="notes-input" class="optional"></textarea>
+    </div>
+
+    <a id="submit-form" value="Add">Add</a>
+  </form>
+</body>
+</html>

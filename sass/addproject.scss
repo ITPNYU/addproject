@@ -1,0 +1,61 @@
+$gray: #777;
+$green: #32ad36;
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica";
+  background: #694695;
+}
+
+form#addproject {
+  background: white;
+  width: 700px;
+  margin: 0 auto;
+  padding: 1em;
+
+  .input-item {
+    margin: 1em 0;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    line-height: 1.6em;
+  }
+
+  input, textarea {
+    margin: 0.75em 0;
+    padding: 0.6em 0.4em;
+    width: 100%;
+  }
+
+  select {
+    min-width: 50%;
+  }
+
+  .chosen-container input {
+    margin: 0;
+  }
+
+  .description {
+    color: $gray;
+    font-size: 0.9em;
+    line-height: 1.4em;
+  }
+
+  input[type="submit"] {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: $green;
+    color: white;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+  }
+}

@@ -15,7 +15,7 @@ $(function(){
     });
 
     if (!validForm) {
-      $('#form-status').html(errors.join("<br>"));
+      $('#form-status').html(errors.join("<br>")).show();
       return false;
     }
   });

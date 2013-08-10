@@ -39,3 +39,7 @@ form#addproject {
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px; }
+  form#addproject #form-status {
+    display: none;
+    background: #d15559;
+    padding: 1em; }
